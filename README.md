@@ -29,6 +29,12 @@ Google Cloud Platform to generate YouTube API key and monitor usage
 
    c. Enter "Target" as your Lambda Function
 
+6. Open Google Cloud, navigate to API's & Services, and generate your YouTube Data API V3 key.
+
+7. Finally, setup Environment Variables in "Configuration" tab for your lambda funtion. Add 2 variables:
+
+   a. Yotube Api Key
+   b. SNS Topic ARN
 
 ## Use Cases
 
