@@ -2,12 +2,14 @@
 
 I built a scheduler to send me gym motivation videos daily at 4pm (just before my evening workout).
 
+
 ## Technologies used
 
 AWS Lambda to run Python script
 AWS Simple Notification Service (SNS)
 AWS EventBridge to schedule the job
 Google Cloud Platform to generate YouTube API key and monitor usage
+
 
 ## How to Setup
 
@@ -20,8 +22,11 @@ Google Cloud Platform to generate YouTube API key and monitor usage
 4. Create a new Subscription and enter your email/phone number where you want to receive the notification
 
 5. Navigate to "Schedules" in AWS EventBridges, and create a new Schedule.
+
    a. Set Occurence as Recurring & Schedule Type as Cron-based
+
    b. Enter the time you want to run the job daily as a Cron expression. For eg. 4pm is "0 16 * * ? *"
+
    c. Enter "Target" as your Lambda Function
 
 
